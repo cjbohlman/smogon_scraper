@@ -11,3 +11,4 @@ API for scraping data from Smogon
  - [ ] add optional format param
  - [ ] deploy to Heroku
  - [ ] interface with smogon damage calculator
+ - [ ] create web interface for showing description
