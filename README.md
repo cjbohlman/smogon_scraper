@@ -8,7 +8,7 @@ API for scraping data from Smogon
  `pip install bs4`
 
 ## Todo List
+ - [ ] create landing page for /
  - [ ] add optional format param
- - [ ] deploy to Heroku
  - [ ] interface with smogon damage calculator
  - [ ] create web interface for showing description
