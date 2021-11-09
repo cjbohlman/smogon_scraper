@@ -10,7 +10,92 @@
 }
 
 .site-header {
-    background-color: #ee1515;
+    background-color: #ff4949;
     color: white;
 }
 
+#title {
+    padding: 5px 5px 0px 5px;
+    font-size: 50px;
+}
+
+#title-description {
+    padding: 10px 5px 0px 5px;
+    font-size: 20px;
+}
+
+h4 {
+    padding: 10px 5px 0px 5px;
+    font-size: 25px;
+}
+
+.api-explorer {
+    display: grid;
+    grid-column: 1 / 1;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#url-label {
+    border: 1px solid #e6e6e6;
+    border-right-width: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #e6e6e6;
+    font-size: 1em;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    color: #3f3f3f;
+}
+
+#url-input {
+    border: 1px solid #e6e6e6;
+    border-left-width: 0;
+    border-right-width: 0;
+    background: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#url-submit {
+    border: 1px solid rgb(15, 99, 255);
+    border-left-width: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgb(15, 99, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+}
+
+.results {
+    margin: 0px 50px 50px 50px;
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 80%;
+}
+
+#raw-link {
+    margin-left: 10px;
+}

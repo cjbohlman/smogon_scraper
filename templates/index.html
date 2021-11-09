@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Smogon API</title>
+    <title>SmogAPI</title>
     <link rel="stylesheet" href="static/style.css">
   </head>
 
   <body>
     <header>
       <div class="site-header">
-        <h1>Welcome to the Smogon API.</h1>
+        <h1 id="title">SmogAPI</h1>
+        <h3 id="title-description">A RESTful Smogon API</h3>
       </div>
     </header>
     <div class="root">
       <div class="api-explorer">
-        <p>Query with a generation and a pokemon name to get started.</p>
-        <div class="input">
-          <a href="https://chris-smogon.herokuapp.com/pkmn/sm/vaporeon">Try it now!</a>
+        <h4 class="grid-item">Try it out!</h4>
+        <div class="input grid-item">
+          <div class="input-wrapper">
+            <label id="url-label" for="url-input">https://chris-smogon.herokuapp.com/pkmn/</label>
+            <input id="url-input" type="text" value="sm/vaporeon">
+            <input id="url-submit" type="submit" value="Submit"></button>
+          </div>
+          <br>
+          <!-- Will point to something like: https://chris-smogon.herokuapp.com/pkmn/sm/vaporeon -->
+          <a id="raw-link" href="">Or view the raw data</a>
         </div>
-        <div class="results">
-          
+        <div class="results grid-item">
+          Type in a generation and Pokemon and press Submit
         </div>
       </div>
     </div>
