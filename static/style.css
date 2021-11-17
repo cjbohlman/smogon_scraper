@@ -20,7 +20,7 @@
 }
 
 #title-description {
-    padding: 10px 5px 0px 5px;
+    padding: 10px 5px 5px 5px;
     font-size: 20px;
 }
 
@@ -87,6 +87,12 @@ h4 {
     color: white;
 }
 
+#url-submit:hover {
+    border-color: rgb(13, 88, 226);
+    background: rgb(13, 88, 226);
+    cursor: pointer;
+}
+
 .results {
     margin: 0px 50px 50px 50px;
     background-color: lightgrey;
@@ -97,5 +103,9 @@ h4 {
 }
 
 #raw-link {
+    margin-left: 10px;
+}
+
+footer {
     margin-left: 10px;
 }
