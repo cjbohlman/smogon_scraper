@@ -8,6 +8,7 @@ API for scraping data from Smogon
  `pip install bs4`
 
 ## Todo List
+ - [ ] Finish web page look and loading of data
  - [ ] Develop landing page for application
  - [ ] Add optional format param
  - [ ] Add optional description param
