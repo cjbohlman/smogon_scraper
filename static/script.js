@@ -11,9 +11,12 @@ window.addEventListener('DOMContentLoaded', () => {
         
         // run an api call and populate box with api call results
         getAPICall(call_params).then((strategies) => {
-            // console.log(strategies);
-            const pretty_strategies = JSON.stringify(strategies, null, 10);
-            description_box.innerHTML = pretty_strategies;
+            if (strategies === null) {
+                description_box.innerHTML = "No strategies found.";
+                return;
+            }
+            const formatted_strategies = JSON.stringify(strategies,null,4); 
+            description_box.innerHTML = "<pre>"+formatted_strategies+"</pre>";
         });        
     });
 
@@ -26,6 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
 async function getAPICall(call_params) {
     const smogon_url = window.location.href + 'pkmn/';
     const response = await fetch(smogon_url + call_params);
-    const strategies = await response.json(); //extract JSON from the http response
+    const strategies = await response.json();
     return strategies;
 }
