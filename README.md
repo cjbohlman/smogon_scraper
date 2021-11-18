@@ -1,5 +1,6 @@
 # smogon_scraper
 API for scraping data from Smogon
+Hosted at https://smogon-api.herokuapp.com/
 
 ## Dependencies
  `pip install flask`\
